@@ -8,7 +8,8 @@ usr/bin/ld: cannot find -l<nameOfTheLibrary>
 ```
 >eg: /usr/bin/ld: cannot find -lavdevice
 
-(a compilation issue while using g++ which was encountered while building https://github.com/vadimkantorov/mpegflow)
+**A compilation issue while using g++ which was encountered while building https://github.com/vadimkantorov/mpegflow
+OS: Ubuntu 20.04 LTS**
 
 #### How I Resolved:
 
