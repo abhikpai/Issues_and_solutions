@@ -14,7 +14,7 @@ usr/bin/ld: cannot find -l<nameOfTheLibrary>
 
 #### How I Resolved:
 
-First do a package search for <nameOfTheLibrary>
+First do a package search for "nameOfTheLibrary" :
 ```
 apt-cache search <nameOfTheLibrary>
 ```
