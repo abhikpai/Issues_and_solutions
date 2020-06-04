@@ -21,4 +21,3 @@ apt-cache search <nameOfTheLibrary>
  Among the results, install the one which ends with "*-dev*"
  
 >eg: apt-get install libavdevice-dev
-
