@@ -34,8 +34,10 @@ ImportError: /lib/x86_64-linux-gnu/librsvg-2.so.2: undefined symbol: cairo_tag_e
 
 #### How I Resolved:
 
-* Upon investgation I found a workaound for the issue i.e, update the library to its 'suitable' version in anaconda. 
+* Upon investgation I found that the *librsvg-2.so* file was not present at the location *~/anaconda3/lib/* but was found at the location */lib/x86_64-linux-gnu/*. Updating the library to its 'suitable' version in anaconda is the workaround for the solution.
+
 The following command as used:
 ```
 conda install -c conda-forge/label/cf202003 librsvg
 ```
+* This resulted in the creation of a new file "librsvg-2.so.2.40.19" at both the above locations. And the code ran fine.
