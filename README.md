@@ -8,7 +8,7 @@ usr/bin/ld: cannot find -l<nameOfTheLibrary>
 ```
 >eg: /usr/bin/ld: cannot find -lavdevice
 
-*A compilation issue while using "g++" in Ubuntu 20.04 LTS, which was encountered while building https://github.com/vadimkantorov/mpegflow*
+* A compilation issue while using "g++" in Ubuntu 20.04 LTS, which was encountered while building https://github.com/vadimkantorov/mpegflow
 
 
 #### How I Resolved:
@@ -34,7 +34,7 @@ The strange thing here was, I was able to run the statement (without the above e
 
 #### How I Resolved:
 
-Upon investgation I found a workaound for the issue i.e, update the library to its 'suitable' version in anaconda. 
+* Upon investgation I found a workaound for the issue i.e, update the library to its 'suitable' version in anaconda. 
 The following command as used:
 ```
 conda install -c conda-forge/label/cf202003 librsvg
