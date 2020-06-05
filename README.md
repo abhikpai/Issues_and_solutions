@@ -8,18 +8,18 @@ usr/bin/ld: cannot find -l<nameOfTheLibrary>
 ```
 >eg: /usr/bin/ld: cannot find -lavdevice
 
-* A compilation issue while using "g++" in Ubuntu 20.04 LTS, which was encountered while building https://github.com/vadimkantorov/mpegflow
+* This was a compilation issue while using "g++" in Ubuntu 20.04 LTS, which was encountered while building https://github.com/vadimkantorov/mpegflow
 
 
 #### How I Resolved:
 
-First do a package search for "nameOfTheLibrary" :
+* First do a package search for "nameOfTheLibrary" :
 ```
 apt-cache search <nameOfTheLibrary>
 ```
 >eg: apt-cache search avdevice
   
- Among the results, install the one which ends with "*-dev*"
+ * Among the results, install the one which ends with "*-dev*"
  
 >eg: apt-get install libavdevice-dev
 
@@ -30,7 +30,7 @@ ImportError: /lib/x86_64-linux-gnu/librsvg-2.so.2: undefined symbol: cairo_tag_e
 ```
 * This issue is specific and  was found while executing a python import statement (@ https://github.com/bombardellif/hhi-stmrftracking) in Ubuntu 20.04 LTS*
 
-The strange thing here was, I was able to run the statement (without the above error) in Python3 console in the terminal with Python 3.8.2. But, I was not able to run the code in the anaconda environment with Python 3.7.6. 
+* The strange thing here was, I was able to run the statement (without the above error) in Python3 console in the terminal with Python 3.8.2. But, I was not able to run the code in the anaconda environment with Python 3.7.6. 
 
 #### How I Resolved:
 
