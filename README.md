@@ -48,8 +48,11 @@ conda install -c conda-forge/label/cf202003 librsvg
 * This is a simple issue which is encountered if you are new to Linux where, after installation of MATLAB, the executable MATLAB application is not visible in the dock panel.
 
 * Usually, in such cases, you need to find the path where you have installed MATLAB. 
+
 For me, it was installed at */usr/local/MATLAB/R2020a*. From here, you still have to find the executable file, to launch MATLAB.
+
 For me, it was located at */usr/local/MATLAB/R2020a/bin*.
+
 Once you are at this location (through "cd */usr/local/MATLAB/R2020a/bin*" in terminal), execute the following command to launch MATLAB:
 ```
 $ .\matlab
