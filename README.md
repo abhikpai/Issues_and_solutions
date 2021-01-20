@@ -45,7 +45,7 @@ conda install -c conda-forge/label/cf202003 librsvg
 
 ## Issue 3: Running MATLAB in Ubuntu (without using terminal commands)
 
-* This is a simple issue which is encountered if you are new to Linux where, after installation of MATLAB, the executable MATLAB application is not visible in the dock panel.
+* This is a simple issue where the executable MATLAB application is not visible in the dock panel, after installation of MATLAB.
 
 * Usually, in such cases, you need to find the path where you have installed MATLAB. 
 
