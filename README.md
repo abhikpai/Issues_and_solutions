@@ -2,7 +2,7 @@
 This repo. does not contain any code!! But it contains common issues I faced while coding/running codes and their quick solutions which I found. Might be helpful for me or some one else in future.
 
 
-## Issue 1:
+## Issue 1: Compilation of MPEGFLOW
 ```
 usr/bin/ld: cannot find -l<nameOfTheLibrary>
 ```
@@ -24,11 +24,11 @@ apt-cache search <nameOfTheLibrary>
 >eg: apt-get install libavdevice-dev
 
 
-## Issue 2:
+## Issue 2: Python Import Error 
 ```
 ImportError: /lib/x86_64-linux-gnu/librsvg-2.so.2: undefined symbol: cairo_tag_end
 ```
-* This issue is specific and  was found while executing a python import statement (@ https://github.com/bombardellif/hhi-stmrftracking) in Ubuntu 20.04 LTS*
+* This issue is specific and was found while executing a python import statement (@ https://github.com/bombardellif/hhi-stmrftracking) in Ubuntu 20.04 LTS*
 
 * The strange thing here was, I was able to run the statement (without the above error) in Python3 console in the terminal with Python 3.8.2. But, I was not able to run the code in the anaconda environment with Python 3.7.6. 
 
@@ -41,3 +41,29 @@ The following command as used:
 conda install -c conda-forge/label/cf202003 librsvg
 ```
 * This resulted in the creation of a new file "librsvg-2.so.2.40.19" at both the above locations. And the code ran fine.
+
+
+## Issue 3: Running MATLAB in Ubuntu (without using terminal commands)
+
+* This is a simple issue which is encountered if you are new to Linux where, after installation of MATLAB, the executable MATLAB application is not visible in the dock panel.
+
+* Usually, in such cases, you need to find the path where you have installed MATLAB. 
+For me, it was installed at */usr/local/MATLAB/R2020a*. From here, you still have to find the executable file, to launch MATLAB.
+For me, it was located at */usr/local/MATLAB/R2020a/bin*.
+Once you are at this location (through "cd */usr/local/MATLAB/R2020a/bin*" in terminal), execute the following command to launch MATLAB:
+```
+$ .\matlab
+```
+
+* You need to do this each time when you want to run MATLAB. Irritating right? Well, there is simple way out of it!
+
+#### How I Resolved:
+
+* Do the following in the terminal (Tested on Ubuntu only) : 
+```
+$ sudo apt install matlab-support
+```
+
+* This will launch a program which asks for the MATLAB installation path (*/usr/local/MATLAB/R2020a*). Use "TAB"-key to advance the cursor to "OK' button and hit "ENTER". Done!
+
+* After this process, you will find a MATLAB icon in the dock panel.
