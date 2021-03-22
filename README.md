@@ -1,5 +1,5 @@
-# Common_Issues_Resolved
-This repo. does not contain any code!! But it contains common issues I faced while coding/running codes and their quick solutions which I found. Might be helpful for me or some one else in future.
+# Solutions_to_some_issues
+This repo. contains common issues I faced while coding/running codes and their quick solutions which I found. Might be helpful for me or some one else in future.
 
 
 ## Issue 1: Compilation of MPEGFLOW
