@@ -1,5 +1,5 @@
 # Solutions_to_some_issues
-This repo. contains common issues I faced while coding/running codes and their quick solutions which I found. Might be helpful for me or some one else in future. Will keep on updating this with new issues and its solution.
+This repo. contains common issues I faced while coding/running codes and their quick solutions which I found. Might be helpful for me or some one else in future. Will keep on updating the repo. with new issues and their solution.
 
 
 ## Issue 1: Compilation of MPEGFLOW
